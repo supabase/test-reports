@@ -1,0 +1,85 @@
+{
+  "uid" : "c47658b7a9c3c5d3",
+  "name" : "generate link 0",
+  "fullName" : "authentication API generate link generate link 0",
+  "historyId" : "70be3a7b-1e2a-51a5-9b38-bffdd22b83c3",
+  "time" : {
+    "start" : 1650312355758,
+    "stop" : 1650312355758,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication API.generate link"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication API"
+  }, {
+    "name" : "suite",
+    "value" : "generate link"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az129-499"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "f8276a06b4252f48",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/28//#testresult/f8276a06b4252f48",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650296709688,
+          "stop" : 1650296709689,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "4e77382027092157",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/27//#testresult/4e77382027092157",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650295474145,
+          "stop" : 1650295474145,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c47658b7a9c3c5d3.json",
+  "parameterValues" : [ ]
+}

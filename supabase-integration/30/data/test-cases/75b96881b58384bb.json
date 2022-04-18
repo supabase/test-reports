@@ -1,0 +1,82 @@
+{
+  "uid" : "75b96881b58384bb",
+  "name" : "refresh session",
+  "fullName" : "authentication API refresh session",
+  "historyId" : "b66691f6-8672-509c-a951-f2c8332b5d66",
+  "time" : {
+    "start" : 1650312355758,
+    "stop" : 1650312355758,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication API"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication API"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az129-499"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "107d9056df8f2c50",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/28//#testresult/107d9056df8f2c50",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650296709688,
+          "stop" : 1650296709688,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "c994299fb569d7d7",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/27//#testresult/c994299fb569d7d7",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650295474144,
+          "stop" : 1650295474145,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "75b96881b58384bb.json",
+  "parameterValues" : [ ]
+}
