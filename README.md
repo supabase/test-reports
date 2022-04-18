@@ -2,6 +2,8 @@
 
 Repository to store test reports data and host reporting in gh-pages
 
-## Dasboard
+## Dasboards
 
-https://supabase.github.io/test-reports/
+- #### functions-js client 
+  - repo: https://github.com/supabase/functions-js
+  - report: https://supabase.github.io/test-reports/functions-js
