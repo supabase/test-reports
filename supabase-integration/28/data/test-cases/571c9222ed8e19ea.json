@@ -1,0 +1,75 @@
+{
+  "uid" : "571c9222ed8e19ea",
+  "name" : "subscribe on table with RLS 1",
+  "fullName" : "realtime subscribe on table with RLS subscribe on table with RLS 1",
+  "historyId" : "619b88f0-df7b-5ebe-baa0-2f648cbba49d",
+  "time" : {
+    "start" : 1650296710492,
+    "stop" : 1650296710492,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "realtime.subscribe on table with RLS"
+  }, {
+    "name" : "parentSuite",
+    "value" : "realtime"
+  }, {
+    "name" : "suite",
+    "value" : "subscribe on table with RLS"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az182-392"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "7a38a1f4c1fe7cb8",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/27//#testresult/7a38a1f4c1fe7cb8",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650295475084,
+          "stop" : 1650295475084,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "571c9222ed8e19ea.json",
+  "parameterValues" : [ ]
+}
