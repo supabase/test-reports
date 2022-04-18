@@ -1,0 +1,381 @@
+{
+  "uid" : "fb513783fbbfc202",
+  "name" : "invoke mirror with body arrayBuffer",
+  "fullName" : "invoke mirror with body arrayBuffer",
+  "historyId" : "34f78635f1e23b3664fc66944b42c0c1",
+  "time" : {
+    "start" : 1650270919459,
+    "stop" : 1650270919500,
+    "duration" : 41
+  },
+  "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _f;\n\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`\n    );\n    (0,\n    jest_custom_reporter_1.attach)(\"setAuth\", apiKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(apiKey);\n    (0, jest_custom_reporter_1.log)(\"invoke mirror\");\n    const body = {\n      one: (0, nanoid_1.nanoid)(10),\n      two: (0, nanoid_1.nanoid)(5),\n      three: (0, nanoid_1.nanoid)(),\n      num: 11,\n      flag: false,\n    };\n    const arrayBuffer = (0, binaries_1.str2ab)(JSON.stringify(body));\n    const { data, error } = yield fclient.invoke(\"mirror\", {\n      responseType: \"arrayBuffer\",\n      body: arrayBuffer,\n      headers: {\n        \"content-type\": \"application/octet-stream\",\n        \"response-type\": \"arrayBuffer\",\n      },\n    });\n    const dataJSON = JSON.parse(\n      new TextDecoder().decode(\n        data !== null && data !== void 0 ? data : Buffer.from(\"\").buffer\n      )\n    );\n    dataJSON.body = JSON.parse(dataJSON.body.replace(/\\0/g, \"\"));\n    (0, jest_custom_reporter_1.log)(\"assert no error\");\n\n    expect(error).toBeNull();\n    const expected = {\n      url: \"http://localhost:8000/mirror\",\n      method: \"POST\",\n      headers:\n        (_f =\n          dataJSON === null || dataJSON === void 0\n            ? void 0\n            : dataJSON.headers) !== null && _f !== void 0\n          ? _f\n          : [],\n      body: body,\n    };\n    (0,\n    jest_custom_reporter_1.attach)(\"check data from function\", `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(dataJSON)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(dataJSON).toEqual(expected);\n  });\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">() =&gt;\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _f;\n\n    (0, jest_custom_reporter_1.log)(&quot;create FunctionsClient&quot;);\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`\n    );\n    (0,\n    jest_custom_reporter_1.attach)(&quot;setAuth&quot;, apiKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(apiKey);\n    (0, jest_custom_reporter_1.log)(&quot;invoke mirror&quot;);\n    const body = {\n      one: (0, nanoid_1.nanoid)(10),\n      two: (0, nanoid_1.nanoid)(5),\n      three: (0, nanoid_1.nanoid)(),\n      num: 11,\n      flag: false,\n    };\n    const arrayBuffer = (0, binaries_1.str2ab)(JSON.stringify(body));\n    const { data, error } = yield fclient.invoke(&quot;mirror&quot;, {\n      responseType: &quot;arrayBuffer&quot;,\n      body: arrayBuffer,\n      headers: {\n        &quot;content-type&quot;: &quot;application/octet-stream&quot;,\n        &quot;response-type&quot;: &quot;arrayBuffer&quot;,\n      },\n    });\n    const dataJSON = JSON.parse(\n      new TextDecoder().decode(\n        data !== null &amp;&amp; data !== void 0 ? data : Buffer.from(&quot;&quot;).buffer\n      )\n    );\n    dataJSON.body = JSON.parse(dataJSON.body.replace(/\\0/g, &quot;&quot;));\n    (0, jest_custom_reporter_1.log)(&quot;assert no error&quot;);\n\n    expect(error).toBeNull();\n    const expected = {\n      url: &quot;http://localhost:8000/mirror&quot;,\n      method: &quot;POST&quot;,\n      headers:\n        (_f =\n          dataJSON === null || dataJSON === void 0\n            ? void 0\n            : dataJSON.headers) !== null &amp;&amp; _f !== void 0\n          ? _f\n          : [],\n      body: body,\n    };\n    (0,\n    jest_custom_reporter_1.attach)(&quot;check data from function&quot;, `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(dataJSON)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(dataJSON).toEqual(expected);\n  });\n\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "read function body",
+      "time" : {
+        "start" : 1650270906723,
+        "stop" : 1650270906723,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function body",
+      "time" : {
+        "start" : 1650270906723,
+        "stop" : 1650270906724,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "58b9461677457472",
+        "name" : "text/plain",
+        "source" : "58b9461677457472.txt",
+        "type" : "text/plain",
+        "size" : 1483
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add network",
+      "time" : {
+        "start" : 1650270906724,
+        "stop" : 1650270906724,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "create relay mirror-8jMjv",
+      "time" : {
+        "start" : 1650270910315,
+        "stop" : 1650270910315,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "start relay mirror-8jMjv",
+      "time" : {
+        "start" : 1650270910316,
+        "stop" : 1650270910316,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check function is healthy: mirror-8jMjv",
+      "time" : {
+        "start" : 1650270916429,
+        "stop" : 1650270916429,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function started to serve: mirror-8jMjv",
+      "time" : {
+        "start" : 1650270919001,
+        "stop" : 1650270919001,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _f;\n\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`\n    );\n    (0,\n    jest_custom_reporter_1.attach)(\"setAuth\", apiKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(apiKey);\n    (0, jest_custom_reporter_1.log)(\"invoke mirror\");\n    const body = {\n      one: (0, nanoid_1.nanoid)(10),\n      two: (0, nanoid_1.nanoid)(5),\n      three: (0, nanoid_1.nanoid)(),\n      num: 11,\n      flag: false,\n    };\n    const arrayBuffer = (0, binaries_1.str2ab)(JSON.stringify(body));\n    const { data, error } = yield fclient.invoke(\"mirror\", {\n      responseType: \"arrayBuffer\",\n      body: arrayBuffer,\n      headers: {\n        \"content-type\": \"application/octet-stream\",\n        \"response-type\": \"arrayBuffer\",\n      },\n    });\n    const dataJSON = JSON.parse(\n      new TextDecoder().decode(\n        data !== null && data !== void 0 ? data : Buffer.from(\"\").buffer\n      )\n    );\n    dataJSON.body = JSON.parse(dataJSON.body.replace(/\\0/g, \"\"));\n    (0, jest_custom_reporter_1.log)(\"assert no error\");\n\n    expect(error).toBeNull();\n    const expected = {\n      url: \"http://localhost:8000/mirror\",\n      method: \"POST\",\n      headers:\n        (_f =\n          dataJSON === null || dataJSON === void 0\n            ? void 0\n            : dataJSON.headers) !== null && _f !== void 0\n          ? _f\n          : [],\n      body: body,\n    };\n    (0,\n    jest_custom_reporter_1.attach)(\"check data from function\", `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(dataJSON)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(dataJSON).toEqual(expected);\n  });\n\n```\n",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "create FunctionsClient",
+      "time" : {
+        "start" : 1650270919485,
+        "stop" : 1650270919485,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "setAuth",
+      "time" : {
+        "start" : 1650270919485,
+        "stop" : 1650270919486,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "165c138aa1ef15f3",
+        "name" : "text/plain",
+        "source" : "165c138aa1ef15f3.txt",
+        "type" : "text/plain",
+        "size" : 124
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "invoke mirror",
+      "time" : {
+        "start" : 1650270919486,
+        "stop" : 1650270919486,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert no error",
+      "time" : {
+        "start" : 1650270919500,
+        "stop" : 1650270919500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check data from function",
+      "time" : {
+        "start" : 1650270919500,
+        "stop" : 1650270919500,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "61543f7dde503c5d",
+        "name" : "text/plain",
+        "source" : "61543f7dde503c5d.txt",
+        "type" : "text/plain",
+        "size" : 1262
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "body"
+  }, {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "spec"
+  }, {
+    "name" : "subSuite",
+    "value" : "params.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "73c30fde49e79701",
+        "reportUrl" : "https://supabase.github.io/test-reports/functions-js/14//#testresult/73c30fde49e79701",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650270898932,
+          "stop" : 1650270898964,
+          "duration" : 32
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fb513783fbbfc202.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,390 @@
+{
+  "uid" : "d7f43721cc0c013c",
+  "name" : "invoke hello: auth override by setAuth wrong key",
+  "fullName" : "invoke hello: auth override by setAuth wrong key",
+  "historyId" : "ce65bb7fe719ef4a8c27ef015ed36443",
+  "time" : {
+    "start" : 1650270924926,
+    "stop" : 1650270924967,
+    "duration" : 41
+  },
+  "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    const wrongKey = (0, jsonwebtoken_1.sign)({ name: \"anon\" }, \"wrong_jwt\");\n    (0,\n    jest_custom_reporter_1.attach)(\"setAuth with wrong jwt\", wrongKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(wrongKey);\n    (0, jest_custom_reporter_1.log)(\"invoke hello\");\n    const { data, error } = yield fclient.invoke(\"hello\", {\n      responseType: \"text\",\n    });\n    (0, jest_custom_reporter_1.log)(\"check error\");\n\n    expect(error).not.toBeNull();\n    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(\n      \"Invalid JWT\"\n    );\n    expect(data).toBeNull();\n  });\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">() =&gt;\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(&quot;create FunctionsClient&quot;);\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    const wrongKey = (0, jsonwebtoken_1.sign)({ name: &quot;anon&quot; }, &quot;wrong_jwt&quot;);\n    (0,\n    jest_custom_reporter_1.attach)(&quot;setAuth with wrong jwt&quot;, wrongKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(wrongKey);\n    (0, jest_custom_reporter_1.log)(&quot;invoke hello&quot;);\n    const { data, error } = yield fclient.invoke(&quot;hello&quot;, {\n      responseType: &quot;text&quot;,\n    });\n    (0, jest_custom_reporter_1.log)(&quot;check error&quot;);\n\n    expect(error).not.toBeNull();\n    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(\n      &quot;Invalid JWT&quot;\n    );\n    expect(data).toBeNull();\n  });\n\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "read function body",
+      "time" : {
+        "start" : 1650270920670,
+        "stop" : 1650270920670,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function body",
+      "time" : {
+        "start" : 1650270920670,
+        "stop" : 1650270920671,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "15525e63659cdd64",
+        "name" : "text/plain",
+        "source" : "15525e63659cdd64.txt",
+        "type" : "text/plain",
+        "size" : 103
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add network",
+      "time" : {
+        "start" : 1650270920671,
+        "stop" : 1650270920671,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "create relay hello-MQGbe",
+      "time" : {
+        "start" : 1650270921602,
+        "stop" : 1650270921602,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "start relay hello-MQGbe",
+      "time" : {
+        "start" : 1650270921602,
+        "stop" : 1650270921602,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check function is healthy: hello-MQGbe",
+      "time" : {
+        "start" : 1650270922283,
+        "stop" : 1650270922283,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function started to serve: hello-MQGbe",
+      "time" : {
+        "start" : 1650270924861,
+        "stop" : 1650270924861,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    const wrongKey = (0, jsonwebtoken_1.sign)({ name: \"anon\" }, \"wrong_jwt\");\n    (0,\n    jest_custom_reporter_1.attach)(\"setAuth with wrong jwt\", wrongKey, allure_js_commons_1.ContentType.TEXT);\n    fclient.setAuth(wrongKey);\n    (0, jest_custom_reporter_1.log)(\"invoke hello\");\n    const { data, error } = yield fclient.invoke(\"hello\", {\n      responseType: \"text\",\n    });\n    (0, jest_custom_reporter_1.log)(\"check error\");\n\n    expect(error).not.toBeNull();\n    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(\n      \"Invalid JWT\"\n    );\n    expect(data).toBeNull();\n  });\n\n```\n",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "create FunctionsClient",
+      "time" : {
+        "start" : 1650270924956,
+        "stop" : 1650270924956,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "setAuth with wrong jwt",
+      "time" : {
+        "start" : 1650270924956,
+        "stop" : 1650270924956,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f38fdc514316105c",
+        "name" : "text/plain",
+        "source" : "f38fdc514316105c.txt",
+        "type" : "text/plain",
+        "size" : 124
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "invoke hello",
+      "time" : {
+        "start" : 1650270924957,
+        "stop" : 1650270924957,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check error",
+      "time" : {
+        "start" : 1650270924966,
+        "stop" : 1650270924966,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "auth"
+  }, {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "spec"
+  }, {
+    "name" : "subSuite",
+    "value" : "hello.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "4cc25776bdcd2e9b",
+        "reportUrl" : "https://supabase.github.io/test-reports/functions-js/14//#testresult/4cc25776bdcd2e9b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1650270902703,
+          "stop" : 1650270902774,
+          "duration" : 71
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d7f43721cc0c013c.json",
+  "parameterValues" : [ ]
+}
