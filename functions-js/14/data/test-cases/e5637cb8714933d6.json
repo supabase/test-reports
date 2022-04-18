@@ -1,0 +1,361 @@
+{
+  "uid" : "e5637cb8714933d6",
+  "name" : "invoke mirror with client header",
+  "fullName" : "invoke mirror with client header",
+  "historyId" : "ec14d31f29edef5650c205654433ae5b",
+  "time" : {
+    "start" : 1650270898787,
+    "stop" : 1650270898833,
+    "duration" : 46
+  },
+  "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _b;\n\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n          CustomHeader: \"check me\",\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(\"invoke mirror\");\n    const { data, error } = yield fclient.invoke(\"mirror\", {\n      responseType: \"json\",\n    });\n    (0, jest_custom_reporter_1.log)(\"assert no error\");\n\n    expect(error).toBeNull();\n    const expected = {\n      url: \"http://localhost:8000/mirror\",\n      method: \"POST\",\n      headers:\n        (_b = data === null || data === void 0 ? void 0 : data.headers) !==\n          null && _b !== void 0\n          ? _b\n          : [],\n      body: \"\",\n    };\n    (0,\n    jest_custom_reporter_1.attach)(\"check data from function\", `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(data).toEqual(expected);\n    (0,\n    jest_custom_reporter_1.attach)(\"check headers from function\", `expected to include: ${[\"customheader\", \"check me\"]}\\n actual: ${JSON.stringify(data === null || data === void 0 ? void 0 : data.headers)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(\n      (data === null || data === void 0 ? void 0 : data.headers).filter(\n        ([k, v]) => k === \"customheader\" && v === \"check me\"\n      ).length > 0\n    ).toBe(true);\n  });\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">() =&gt;\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _b;\n\n    (0, jest_custom_reporter_1.log)(&quot;create FunctionsClient&quot;);\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n          CustomHeader: &quot;check me&quot;,\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(&quot;invoke mirror&quot;);\n    const { data, error } = yield fclient.invoke(&quot;mirror&quot;, {\n      responseType: &quot;json&quot;,\n    });\n    (0, jest_custom_reporter_1.log)(&quot;assert no error&quot;);\n\n    expect(error).toBeNull();\n    const expected = {\n      url: &quot;http://localhost:8000/mirror&quot;,\n      method: &quot;POST&quot;,\n      headers:\n        (_b = data === null || data === void 0 ? void 0 : data.headers) !==\n          null &amp;&amp; _b !== void 0\n          ? _b\n          : [],\n      body: &quot;&quot;,\n    };\n    (0,\n    jest_custom_reporter_1.attach)(&quot;check data from function&quot;, `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(data).toEqual(expected);\n    (0,\n    jest_custom_reporter_1.attach)(&quot;check headers from function&quot;, `expected to include: ${[&quot;customheader&quot;, &quot;check me&quot;]}\\n actual: ${JSON.stringify(data === null || data === void 0 ? void 0 : data.headers)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(\n      (data === null || data === void 0 ? void 0 : data.headers).filter(\n        ([k, v]) =&gt; k === &quot;customheader&quot; &amp;&amp; v === &quot;check me&quot;\n      ).length &gt; 0\n    ).toBe(true);\n  });\n\n</code></pre>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "read function body",
+      "time" : {
+        "start" : 1650270891263,
+        "stop" : 1650270891263,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function body",
+      "time" : {
+        "start" : 1650270891264,
+        "stop" : 1650270891264,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "be326c53dbf6fd9f",
+        "name" : "text/plain",
+        "source" : "be326c53dbf6fd9f.txt",
+        "type" : "text/plain",
+        "size" : 1483
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add network",
+      "time" : {
+        "start" : 1650270891264,
+        "stop" : 1650270891264,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "create relay mirror-VI1Ps",
+      "time" : {
+        "start" : 1650270893134,
+        "stop" : 1650270893134,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "start relay mirror-VI1Ps",
+      "time" : {
+        "start" : 1650270893135,
+        "stop" : 1650270893135,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check function is healthy: mirror-VI1Ps",
+      "time" : {
+        "start" : 1650270897007,
+        "stop" : 1650270897007,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function started to serve: mirror-VI1Ps",
+      "time" : {
+        "start" : 1650270898556,
+        "stop" : 1650270898556,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    var _b;\n\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n          CustomHeader: \"check me\",\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(\"invoke mirror\");\n    const { data, error } = yield fclient.invoke(\"mirror\", {\n      responseType: \"json\",\n    });\n    (0, jest_custom_reporter_1.log)(\"assert no error\");\n\n    expect(error).toBeNull();\n    const expected = {\n      url: \"http://localhost:8000/mirror\",\n      method: \"POST\",\n      headers:\n        (_b = data === null || data === void 0 ? void 0 : data.headers) !==\n          null && _b !== void 0\n          ? _b\n          : [],\n      body: \"\",\n    };\n    (0,\n    jest_custom_reporter_1.attach)(\"check data from function\", `expected: ${JSON.stringify(expected)}\\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(data).toEqual(expected);\n    (0,\n    jest_custom_reporter_1.attach)(\"check headers from function\", `expected to include: ${[\"customheader\", \"check me\"]}\\n actual: ${JSON.stringify(data === null || data === void 0 ? void 0 : data.headers)}`, allure_js_commons_1.ContentType.TEXT);\n    expect(\n      (data === null || data === void 0 ? void 0 : data.headers).filter(\n        ([k, v]) => k === \"customheader\" && v === \"check me\"\n      ).length > 0\n    ).toBe(true);\n  });\n\n```\n",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "create FunctionsClient",
+      "time" : {
+        "start" : 1650270898816,
+        "stop" : 1650270898816,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke mirror",
+      "time" : {
+        "start" : 1650270898816,
+        "stop" : 1650270898816,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert no error",
+      "time" : {
+        "start" : 1650270898832,
+        "stop" : 1650270898832,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check data from function",
+      "time" : {
+        "start" : 1650270898833,
+        "stop" : 1650270898833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "83410778b71ee6ef",
+        "name" : "text/plain",
+        "source" : "83410778b71ee6ef.txt",
+        "type" : "text/plain",
+        "size" : 990
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "check headers from function",
+      "time" : {
+        "start" : 1650270898833,
+        "stop" : 1650270898833,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "48eb37435551bd02",
+        "name" : "text/plain",
+        "source" : "48eb37435551bd02.txt",
+        "type" : "text/plain",
+        "size" : 462
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "headers"
+  }, {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "spec"
+  }, {
+    "name" : "subSuite",
+    "value" : "params.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e5637cb8714933d6.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,795 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:59 GMT 2022","27","test","spec","params.spec.ts","","","invoke mirror with url params","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _j;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const body = {
+      one: (0, nanoid_1.nanoid)(10),
+      two: (0, nanoid_1.nanoid)(5),
+      three: (0, nanoid_1.nanoid)(),
+      num: ""11"",
+      flag: ""false"",
+    };
+    const queryParams = new URLSearchParams(body);
+    const { data, error } = yield fclient.invoke(
+      `mirror?${queryParams.toString()}`,
+      {
+        responseType: ""json"",
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: `http://localhost:8000/mirror?${queryParams.toString()}`,
+      method: ""POST"",
+      headers:
+        (_j = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _j !== void 0
+          ? _j
+          : [],
+      body: """",
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","53","test","spec","hello.spec.ts","","","invoke hello: auth override by setAuth right key","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient with wrong jwt"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${wrongKey}`,
+        },
+      }
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth with right jwt"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","93","test","spec","hello.spec.ts","","","invoke hello with setAuth","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","229","test","spec","params.spec.ts","","","invoke mirror","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _a;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""json"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_a = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _a !== void 0
+          ? _a
+          : [],
+      body: """",
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","71","test","spec","hello.spec.ts","","","invoke hello: auth override by setAuth wrong key","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth with wrong jwt"", wrongKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(wrongKey);
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""check error"");
+
+    expect(error).not.toBeNull();
+    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(
+      ""Invalid JWT""
+    );
+    expect(data).toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","22","test","spec","hello.spec.ts","","","invoke with custom fetch wrong method","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        customFetch: (0, fetch_1.getCustomFetch)(
+          `http://localhost:${relay.container.getMappedPort(8081)}/${""hello""}`,
+          {
+            method: ""GET"",
+            headers: {
+              Authorization: `Bearer ${apiKey}`,
+            },
+          }
+        ),
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke("""", { responseType: ""text"" });
+    (0, jest_custom_reporter_1.log)(""check error"");
+
+    expect(error).not.toBeNull();
+    (0,
+    jest_custom_reporter_1.log)(`assert ${error === null || error === void 0 ? void 0 : error.message} is equal to 'Only POST and OPTIONS requests are supported'`);
+    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(
+      ""Only POST and OPTIONS requests are supported""
+    );
+    expect(data).toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","21","test","spec","hello.spec.ts","","","invoke hello with wrong auth header overridden in invoke","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient with wrong jwt"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0,
+    jest_custom_reporter_1.log)(""invoke hello with wrong Authorization header"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+      headers: {
+        Authorization: `Bearer ${wrongKey}`,
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""check error"");
+
+    expect(error).not.toBeNull();
+    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(
+      ""Invalid JWT""
+    );
+    expect(data).toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","67","test","spec","hello.spec.ts","","","invoke hello with setAuth wrong key","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth with wrong jwt"", wrongKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(wrongKey);
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""check error"");
+
+    expect(error).not.toBeNull();
+    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(
+      ""Invalid JWT""
+    );
+    expect(data).toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","15","test","spec","hello.spec.ts","","","invoke hello with custom fetch override header","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${wrongKey}`,
+        },
+        customFetch: (0, fetch_1.getCustomFetch)(
+          `http://localhost:${relay.container.getMappedPort(8081)}/${""hello""}`,
+          {
+            method: ""Post"",
+            headers: {
+              Authorization: `Bearer ${apiKey}`,
+            },
+          }
+        ),
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello with Authorization header"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"skipped","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:03 GMT 2022","249","test","spec","hello.spec.ts","","","invoke missing function","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""missing"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""check error"");
+
+    expect(error).not.toBeNull();
+    expect(error === null || error === void 0 ? void 0 : error.message).toEqual(
+      ""Invalid JWT""
+    );
+    expect(data).toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","32","test","spec","params.spec.ts","","","invoke mirror with body arrayBuffer","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _f;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const body = {
+      one: (0, nanoid_1.nanoid)(10),
+      two: (0, nanoid_1.nanoid)(5),
+      three: (0, nanoid_1.nanoid)(),
+      num: 11,
+      flag: false,
+    };
+    const arrayBuffer = (0, binaries_1.str2ab)(JSON.stringify(body));
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""arrayBuffer"",
+      body: arrayBuffer,
+      headers: {
+        ""content-type"": ""application/octet-stream"",
+        ""response-type"": ""arrayBuffer"",
+      },
+    });
+    const dataJSON = JSON.parse(
+      new TextDecoder().decode(
+        data !== null && data !== void 0 ? data : Buffer.from("""").buffer
+      )
+    );
+    dataJSON.body = JSON.parse(dataJSON.body.replace(/\0/g, """"));
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_f =
+          dataJSON === null || dataJSON === void 0
+            ? void 0
+            : dataJSON.headers) !== null && _f !== void 0
+          ? _f
+          : [],
+      body: body,
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(dataJSON)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(dataJSON).toEqual(expected);
+  });
+
+```
+"
+"failed","Mon Apr 18 08:35:06 GMT 2022","Mon Apr 18 08:35:06 GMT 2022","20","test","spec","hijack.spec.ts","","","invoke func","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke func"");
+    const { data, error } = yield fclient.invoke(func, {
+      responseType: ""text"",
+    });
+    (0,
+    jest_custom_reporter_1.log)('assert error to be ""Connection Upgrade is not supported""');
+
+    expect(error).not.toBeNull();
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","46","test","spec","params.spec.ts","","","invoke mirror with client header","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _b;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+          CustomHeader: ""check me"",
+        },
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""json"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_b = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _b !== void 0
+          ? _b
+          : [],
+      body: """",
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+    (0,
+    jest_custom_reporter_1.attach)(""check headers from function"", `expected to include: ${[""customheader"", ""check me""]}\n actual: ${JSON.stringify(data === null || data === void 0 ? void 0 : data.headers)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(
+      (data === null || data === void 0 ? void 0 : data.headers).filter(
+        ([k, v]) => k === ""customheader"" && v === ""check me""
+      ).length > 0
+    ).toBe(true);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","39","test","spec","params.spec.ts","","","invoke mirror with body formData","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _d;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    var form = new URLSearchParams();
+    form.append((0, nanoid_1.nanoid)(5), (0, nanoid_1.nanoid)(10));
+    form.append((0, nanoid_1.nanoid)(7), (0, nanoid_1.nanoid)(5));
+    form.append((0, nanoid_1.nanoid)(15), (0, nanoid_1.nanoid)());
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""json"",
+      body: form,
+      headers: {
+        ""content-type"": ""application/x-www-form-urlencoded"",
+        ""response-type"": ""form"",
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const body = [];
+    for (const e of form.entries()) {
+      body.push(e);
+    }
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_d = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _d !== void 0
+          ? _d
+          : [],
+      body: body,
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","20","test","spec","hello.spec.ts","","","invoke hello with auth header in invoke","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello with Authorization header"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","17","test","spec","hello.spec.ts","","","invoke with custom fetch","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        customFetch: (0, fetch_1.getCustomFetch)(
+          `http://localhost:${relay.container.getMappedPort(8081)}/${""hello""}`,
+          {
+            method: ""POST"",
+            headers: {
+              Authorization: `Bearer ${apiKey}`,
+            },
+          }
+        ),
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke("""", { responseType: ""text"" });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","17","test","spec","hello.spec.ts","","","invoke hello with auth header override in invoke","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient with wrong jwt"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    const wrongKey = (0, jsonwebtoken_1.sign)({ name: ""anon"" }, ""wrong_jwt"");
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth with wrong jwt"", wrongKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(wrongKey);
+    (0, jest_custom_reporter_1.log)(""invoke hello with Authorization header"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","28","test","spec","params.spec.ts","","","invoke mirror with body json","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _e;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const body = {
+      one: (0, nanoid_1.nanoid)(10),
+      two: (0, nanoid_1.nanoid)(5),
+      three: (0, nanoid_1.nanoid)(),
+      num: 11,
+      flag: false,
+    };
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""json"",
+      body: JSON.stringify(body),
+      headers: {
+        ""content-type"": ""application/json"",
+        ""response-type"": ""json"",
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_e = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _e !== void 0
+          ? _e
+          : [],
+      body: body,
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","28","test","spec","params.spec.ts","","","invoke mirror with body blob","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _g, _h;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0,
+    jest_custom_reporter_1.attach)(""setAuth"", apiKey, allure_js_commons_1.ContentType.TEXT);
+    fclient.setAuth(apiKey);
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const body = {
+      one: (0, nanoid_1.nanoid)(10),
+      two: (0, nanoid_1.nanoid)(5),
+      three: (0, nanoid_1.nanoid)(),
+      num: 11,
+      flag: false,
+    };
+    const bodyEncoded = (0, binaries_1.str2ab)(JSON.stringify(body));
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""blob"",
+      body: bodyEncoded,
+      headers: {
+        ""content-type"": ""application/octet-stream"",
+        ""response-type"": ""blob"",
+      },
+    });
+    const dataJSON = JSON.parse(
+      (_g = yield data === null || data === void 0 ? void 0 : data.text()) !==
+        null && _g !== void 0
+        ? _g
+        : """"
+    );
+    dataJSON.body = JSON.parse(dataJSON.body.replace(/\0/g, """"));
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_h =
+          dataJSON === null || dataJSON === void 0
+            ? void 0
+            : dataJSON.headers) !== null && _h !== void 0
+          ? _h
+          : [],
+      body: body,
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(dataJSON)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(dataJSON).toEqual(expected);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:34:58 GMT 2022","Mon Apr 18 08:34:58 GMT 2022","30","test","spec","params.spec.ts","","","invoke mirror with invoke header","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    var _c;
+
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`
+    );
+    (0, jest_custom_reporter_1.log)(""invoke mirror"");
+    const customHeader = (0, nanoid_1.nanoid)();
+    const { data, error } = yield fclient.invoke(""mirror"", {
+      responseType: ""json"",
+      headers: {
+        ""custom-header"": customHeader,
+        Authorization: `Bearer ${apiKey}`,
+      },
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    const expected = {
+      url: ""http://localhost:8000/mirror"",
+      method: ""POST"",
+      headers:
+        (_c = data === null || data === void 0 ? void 0 : data.headers) !==
+          null && _c !== void 0
+          ? _c
+          : [],
+      body: """",
+    };
+    (0,
+    jest_custom_reporter_1.attach)(""check data from function"", `expected: ${JSON.stringify(expected)}\n actual: ${JSON.stringify(data)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(data).toEqual(expected);
+    (0,
+    jest_custom_reporter_1.attach)(""check headers from function"", `expected to include: ${[""custom-header"", customHeader]}\n actual: ${JSON.stringify(data === null || data === void 0 ? void 0 : data.headers)}`, allure_js_commons_1.ContentType.TEXT);
+    expect(
+      (data === null || data === void 0 ? void 0 : data.headers).filter(
+        ([k, v]) => k === ""custom-header"" && v === customHeader
+      ).length > 0
+    ).toBe(true);
+  });
+
+```
+"
+"passed","Mon Apr 18 08:35:02 GMT 2022","Mon Apr 18 08:35:02 GMT 2022","50","test","spec","hello.spec.ts","","","invoke hello with auth header","
+### Test
+```typescript
+() =>
+  __awaiter(void 0, void 0, void 0, function* () {
+    (0, jest_custom_reporter_1.log)(""create FunctionsClient"");
+    const fclient = new index_1.FunctionsClient(
+      `http://localhost:${relay.container.getMappedPort(8081)}`,
+      {
+        headers: {
+          Authorization: `Bearer ${apiKey}`,
+        },
+      }
+    );
+    (0, jest_custom_reporter_1.log)(""invoke hello"");
+    const { data, error } = yield fclient.invoke(""hello"", {
+      responseType: ""text"",
+    });
+    (0, jest_custom_reporter_1.log)(""assert no error"");
+
+    expect(error).toBeNull();
+    (0, jest_custom_reporter_1.log)(`assert ${data} is equal to 'Hello World'`);
+    expect(data).toEqual(""Hello World"");
+  });
+
+```
+"
