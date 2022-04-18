@@ -1,0 +1,288 @@
+{
+  "uid" : "8ed69882e4054aca",
+  "name" : "invoke func",
+  "fullName" : "invoke func",
+  "historyId" : "9c5cd9b903a9f8d573413ef16cea3a54",
+  "time" : {
+    "start" : 1650281373123,
+    "stop" : 1650281373141,
+    "duration" : 18
+  },
+  "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(\"invoke func\");\n    const { data, error } = yield fclient.invoke(func, {\n      responseType: \"text\",\n    });\n    (0,\n    jest_custom_reporter_1.log)('assert error to be \"Connection Upgrade is not supported\"');\n\n    expect(error).not.toBeNull();\n  });\n\n```\n",
+  "descriptionHtml" : "<h3>Test</h3>\n<pre><code class=\"language-typescript\">() =&gt;\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(&quot;create FunctionsClient&quot;);\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(&quot;invoke func&quot;);\n    const { data, error } = yield fclient.invoke(func, {\n      responseType: &quot;text&quot;,\n    });\n    (0,\n    jest_custom_reporter_1.log)('assert error to be &quot;Connection Upgrade is not supported&quot;');\n\n    expect(error).not.toBeNull();\n  });\n\n</code></pre>\n",
+  "status" : "failed",
+  "statusMessage" : "expect(received).not.toBeNull()\n",
+  "statusTrace" : "Received: null",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "read function body",
+      "time" : {
+        "start" : 1650281370387,
+        "stop" : 1650281370387,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function body",
+      "time" : {
+        "start" : 1650281370387,
+        "stop" : 1650281370387,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ad4a57e498c441c9",
+        "name" : "text/plain",
+        "source" : "ad4a57e498c441c9.txt",
+        "type" : "text/plain",
+        "size" : 633
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "add network",
+      "time" : {
+        "start" : 1650281370387,
+        "stop" : 1650281370387,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "create relay hijack-TEd2w",
+      "time" : {
+        "start" : 1650281371050,
+        "stop" : 1650281371051,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "start relay hijack-TEd2w",
+      "time" : {
+        "start" : 1650281371051,
+        "stop" : 1650281371051,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "check function is healthy: hijack-TEd2w",
+      "time" : {
+        "start" : 1650281371537,
+        "stop" : 1650281371537,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "function started to serve: hijack-TEd2w",
+      "time" : {
+        "start" : 1650281373123,
+        "stop" : 1650281373123,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "\n### Test\n```typescript\n() =>\n  __awaiter(void 0, void 0, void 0, function* () {\n    (0, jest_custom_reporter_1.log)(\"create FunctionsClient\");\n    const fclient = new index_1.FunctionsClient(\n      `http://localhost:${relay.container.getMappedPort(8081)}`,\n      {\n        headers: {\n          Authorization: `Bearer ${apiKey}`,\n        },\n      }\n    );\n    (0, jest_custom_reporter_1.log)(\"invoke func\");\n    const { data, error } = yield fclient.invoke(func, {\n      responseType: \"text\",\n    });\n    (0,\n    jest_custom_reporter_1.log)('assert error to be \"Connection Upgrade is not supported\"');\n\n    expect(error).not.toBeNull();\n  });\n\n```\n",
+    "status" : "failed",
+    "statusMessage" : "expect(received).not.toBeNull()\n",
+    "statusTrace" : "Received: null",
+    "steps" : [ {
+      "name" : "create FunctionsClient",
+      "time" : {
+        "start" : 1650281373131,
+        "stop" : 1650281373131,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "invoke func",
+      "time" : {
+        "start" : 1650281373131,
+        "stop" : 1650281373131,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "assert error to be \"Connection Upgrade is not supported\"",
+      "time" : {
+        "start" : 1650281373135,
+        "stop" : 1650281373135,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "time" : { },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "hijack"
+  }, {
+    "name" : "thread",
+    "value" : "1"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test"
+  }, {
+    "name" : "package",
+    "value" : "test"
+  }, {
+    "name" : "suite",
+    "value" : "spec"
+  }, {
+    "name" : "subSuite",
+    "value" : "hijack.spec.ts"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 3,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "3770de9399988756",
+        "reportUrl" : "https://supabase.github.io/test-reports/functions-js/13//#testresult/3770de9399988756",
+        "status" : "failed",
+        "statusDetails" : "expect(received).not.toBeNull()\n",
+        "time" : {
+          "start" : 1650270929286,
+          "stop" : 1650270929310,
+          "duration" : 24
+        }
+      }, {
+        "uid" : "2e835d684a69d260",
+        "reportUrl" : "https://supabase.github.io/test-reports/functions-js/14//#testresult/2e835d684a69d260",
+        "status" : "failed",
+        "statusDetails" : "expect(received).not.toBeNull()\n",
+        "time" : {
+          "start" : 1650270906324,
+          "stop" : 1650270906344,
+          "duration" : 20
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "8ed69882e4054aca.json",
+  "parameterValues" : [ ]
+}

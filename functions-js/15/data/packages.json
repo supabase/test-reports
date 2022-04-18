@@ -1,0 +1,282 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test",
+    "children" : [ {
+      "name" : "invoke mirror",
+      "uid" : "6e651cd57482db83",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281365875,
+        "stop" : 1650281366113,
+        "duration" : 238
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with client header",
+      "uid" : "124b9820d300704c",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366115,
+        "stop" : 1650281366157,
+        "duration" : 42
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with invoke header",
+      "uid" : "55e10d1f2289e1e7",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366158,
+        "stop" : 1650281366185,
+        "duration" : 27
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with body formData",
+      "uid" : "6b8dad40b1bae8c8",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366186,
+        "stop" : 1650281366244,
+        "duration" : 58
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with body json",
+      "uid" : "e963234f9b77ca34",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366245,
+        "stop" : 1650281366270,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with body arrayBuffer",
+      "uid" : "7ce2f7f0872b2ff5",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366270,
+        "stop" : 1650281366295,
+        "duration" : 25
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with body blob",
+      "uid" : "ab715c7441c167ae",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366295,
+        "stop" : 1650281366322,
+        "duration" : 27
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke mirror with url params",
+      "uid" : "b3ed53407fcc18b7",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281366322,
+        "stop" : 1650281366346,
+        "duration" : 24
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with auth header",
+      "uid" : "199da7fc39db74b8",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369751,
+        "stop" : 1650281369769,
+        "duration" : 18
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with setAuth",
+      "uid" : "cb47676b21a8f9a3",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369770,
+        "stop" : 1650281369786,
+        "duration" : 16
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with setAuth wrong key",
+      "uid" : "122c69cf3da55b4b",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369786,
+        "stop" : 1650281369806,
+        "duration" : 20
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello: auth override by setAuth wrong key",
+      "uid" : "ed64283a8803ba91",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369806,
+        "stop" : 1650281369827,
+        "duration" : 21
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello: auth override by setAuth right key",
+      "uid" : "1dee8f91c0cdcb18",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369827,
+        "stop" : 1650281369844,
+        "duration" : 17
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with auth header in invoke",
+      "uid" : "66973b76144c186e",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369845,
+        "stop" : 1650281369858,
+        "duration" : 13
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with auth header override in invoke",
+      "uid" : "90fbbb219974b62a",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369858,
+        "stop" : 1650281369872,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with wrong auth header overridden in invoke",
+      "uid" : "b862429c2fda941a",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369872,
+        "stop" : 1650281369901,
+        "duration" : 29
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke missing function",
+      "uid" : "64c7e66ac3454019",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1650281369901,
+        "stop" : 1650281370143,
+        "duration" : 242
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke with custom fetch",
+      "uid" : "6ad42e74b46dc776",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369909,
+        "stop" : 1650281369924,
+        "duration" : 15
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke with custom fetch wrong method",
+      "uid" : "1ec1621846ac8fe",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369925,
+        "stop" : 1650281369947,
+        "duration" : 22
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke hello with custom fetch override header",
+      "uid" : "e4e39aab44a25e7d",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1650281369947,
+        "stop" : 1650281369961,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invoke func",
+      "uid" : "8ed69882e4054aca",
+      "parentUid" : "d662795e8d349f9b5595bf62f43ea7ae",
+      "status" : "failed",
+      "time" : {
+        "start" : 1650281373123,
+        "stop" : 1650281373141,
+        "duration" : 18
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d662795e8d349f9b5595bf62f43ea7ae"
+  } ],
+  "name" : "packages"
+}

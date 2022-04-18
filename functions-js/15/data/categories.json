@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Skipped tests",
+    "children" : [ {
+      "name" : "Test is marked: \"skip\"",
+      "children" : [ {
+        "name" : "invoke missing function",
+        "uid" : "64c7e66ac3454019",
+        "parentUid" : "cedbd30d4c134d5cee1f665a18d9ea7b",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1650281369901,
+          "stop" : 1650281370143,
+          "duration" : 242
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cedbd30d4c134d5cee1f665a18d9ea7b"
+    } ],
+    "uid" : "c125badd1841297a9701a15a8082ec24"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expect(received).not.toBeNull()\n",
+      "children" : [ {
+        "name" : "invoke func",
+        "uid" : "8ed69882e4054aca",
+        "parentUid" : "4cb43f00294fde0b2b9d2c5f64e43b38",
+        "status" : "failed",
+        "time" : {
+          "start" : 1650281373123,
+          "stop" : 1650281373141,
+          "duration" : 18
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cb43f00294fde0b2b9d2c5f64e43b38"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
