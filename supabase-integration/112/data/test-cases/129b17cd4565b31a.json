@@ -1,0 +1,265 @@
+{
+  "uid" : "129b17cd4565b31a",
+  "name" : "subscribe on table with RLS policies 3",
+  "fullName" : "realtime subscribe on table with RLS policies subscribe on table with RLS policies 3",
+  "historyId" : "89d3295e-92e6-5187-99c4-ca46bef1cc77",
+  "time" : {
+    "start" : 1650962460845,
+    "stop" : 1650962460845,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "realtime.subscribe on table with RLS policies"
+  }, {
+    "name" : "parentSuite",
+    "value" : "realtime"
+  }, {
+    "name" : "suite",
+    "value" : "subscribe on table with RLS policies"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az447-602"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 76,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 76
+      },
+      "items" : [ {
+        "uid" : "67381079bbb7801f",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/111//#testresult/67381079bbb7801f",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650961945666,
+          "stop" : 1650961945666,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "45d02301556b472f",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/110//#testresult/45d02301556b472f",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650960814285,
+          "stop" : 1650960814286,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "a9beb43f287b30bd",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/109//#testresult/a9beb43f287b30bd",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650956407149,
+          "stop" : 1650956407149,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f26bd2b01da2a918",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/108//#testresult/f26bd2b01da2a918",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650946706528,
+          "stop" : 1650946706529,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "9ae8269204b0abe8",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/107//#testresult/9ae8269204b0abe8",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650946257778,
+          "stop" : 1650946257779,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "327437ff4d325a55",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/106//#testresult/327437ff4d325a55",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650931361857,
+          "stop" : 1650931361857,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "5cba1c9ec3275c5d",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/105//#testresult/5cba1c9ec3275c5d",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650930894997,
+          "stop" : 1650930894997,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "e012643d8cfd7193",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/104//#testresult/e012643d8cfd7193",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650929135971,
+          "stop" : 1650929135971,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "58d4d4271cdb189f",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/103//#testresult/58d4d4271cdb189f",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650928232884,
+          "stop" : 1650928232885,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "c9a5a946083e974a",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/102//#testresult/c9a5a946083e974a",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650928030089,
+          "stop" : 1650928030089,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "d263f38c6865a05a",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/101//#testresult/d263f38c6865a05a",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650923926622,
+          "stop" : 1650923926622,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "7a3b4648a3064277",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/100//#testresult/7a3b4648a3064277",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650922706094,
+          "stop" : 1650922706094,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "333bcaa24e35aac2",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/99//#testresult/333bcaa24e35aac2",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650916269054,
+          "stop" : 1650916269054,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "97a485cecd31139a",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/98//#testresult/97a485cecd31139a",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650912693184,
+          "stop" : 1650912693184,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "f087c4bf911727d",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/97//#testresult/f087c4bf911727d",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650888236222,
+          "stop" : 1650888236222,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "a6b6de4658ba2252",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/96//#testresult/a6b6de4658ba2252",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650886967149,
+          "stop" : 1650886967149,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "d31e6852bdbb2c7b",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/95//#testresult/d31e6852bdbb2c7b",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650884025194,
+          "stop" : 1650884025194,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "907a82e5fe09335f",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/94//#testresult/907a82e5fe09335f",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650874566210,
+          "stop" : 1650874566210,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "2ce7f14dcf170316",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/93//#testresult/2ce7f14dcf170316",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650810425652,
+          "stop" : 1650810425652,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "ba2947cc4c46e97d",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/91//#testresult/ba2947cc4c46e97d",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1650661063991,
+          "stop" : 1650661063991,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "129b17cd4565b31a.json",
+  "parameterValues" : [ ]
+}
