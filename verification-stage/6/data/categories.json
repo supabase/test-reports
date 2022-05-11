@@ -1,0 +1,95 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+      "children" : [ {
+        "name" : "signup should create user",
+        "uid" : "d828b29ab802deee",
+        "parentUid" : "6128921d52989f6179e375e79e4a0fa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652304992148,
+          "stop" : 1652304992203,
+          "duration" : 55
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "new users",
+        "uid" : "ecf177fc957cd164",
+        "parentUid" : "6128921d52989f6179e375e79e4a0fa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652304992203,
+          "stop" : 1652304992218,
+          "duration" : 15
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "new users by phone",
+        "uid" : "d3ea2dd2691d1334",
+        "parentUid" : "6128921d52989f6179e375e79e4a0fa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652304992218,
+          "stop" : 1652304992232,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "existing users",
+        "uid" : "1082c5584147088a",
+        "parentUid" : "6128921d52989f6179e375e79e4a0fa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652304992232,
+          "stop" : 1652304992254,
+          "duration" : 22
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get user",
+        "uid" : "11e97db0e8103c1",
+        "parentUid" : "6128921d52989f6179e375e79e4a0fa7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652304992258,
+          "stop" : 1652304992271,
+          "duration" : 13
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6128921d52989f6179e375e79e4a0fa7"
+    }, {
+      "name" : ": Timeout - Async callback was not invoked within the 200000 ms timeout specified by jest.setTimeout.",
+      "children" : [ {
+        "name" : "create project",
+        "uid" : "4cfddcaa9f75b67b",
+        "parentUid" : "5dbf631e0f24effea7fed142db6d4036",
+        "status" : "failed",
+        "time" : {
+          "start" : 1652305064419,
+          "stop" : 1652305264805,
+          "duration" : 200386
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5dbf631e0f24effea7fed142db6d4036"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}

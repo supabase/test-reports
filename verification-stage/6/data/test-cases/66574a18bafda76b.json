@@ -1,0 +1,120 @@
+{
+  "uid" : "66574a18bafda76b",
+  "name" : "add table",
+  "fullName" : "tables add table",
+  "historyId" : "4f83c81b-883b-5f9e-802a-fa76d7a4a28a",
+  "time" : {
+    "start" : 1652304998445,
+    "stop" : 1652305020646,
+    "duration" : 22201
+  },
+  "description" : "create table via dashboard API",
+  "descriptionHtml" : "<p>create table via dashboard API</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "create table via dashboard API",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "create dummy table",
+      "time" : {
+        "start" : 1652304998451,
+        "stop" : 1652304998453,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "dummy table",
+        "time" : {
+          "start" : 1652304998452,
+          "stop" : 1652304998453,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "b6e7f4a23eaf7abd",
+          "name" : "application/json",
+          "source" : "b6e7f4a23eaf7abd.json",
+          "type" : "application/json",
+          "size" : 885
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "compare table models to be equal",
+      "time" : {
+        "start" : 1652305018094,
+        "stop" : 1652305018106,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "tables"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tables"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "tables"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az462-178"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "66574a18bafda76b.json",
+  "parameterValues" : [ ]
+}
