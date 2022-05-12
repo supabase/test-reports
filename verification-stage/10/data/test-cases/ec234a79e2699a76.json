@@ -1,0 +1,206 @@
+{
+  "uid" : "ec234a79e2699a76",
+  "name" : "get api service",
+  "fullName" : "api get api service",
+  "historyId" : "f6fb4d41-d6e5-5e64-8d6c-0d433e004c83",
+  "time" : {
+    "start" : 1652358679369,
+    "stop" : 1652358681553,
+    "duration" : 2184
+  },
+  "description" : "get api service and project info",
+  "descriptionHtml" : "<p>get api service and project info</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "get api service and project info",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "expect autoApiService is correctly returned",
+      "time" : {
+        "start" : 1652358681545,
+        "stop" : 1652358681547,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "autoApiService",
+        "time" : {
+          "start" : 1652358681545,
+          "stop" : 1652358681546,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ac489daefd8a5bf9",
+          "name" : "application/json",
+          "source" : "ac489daefd8a5bf9.json",
+          "type" : "application/json",
+          "size" : 1822
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "expect project is correctly returned",
+      "time" : {
+        "start" : 1652358681548,
+        "stop" : 1652358681549,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "project",
+        "time" : {
+          "start" : 1652358681548,
+          "stop" : 1652358681548,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "549b66a7ef65d47a",
+          "name" : "application/json",
+          "source" : "549b66a7ef65d47a.json",
+          "type" : "application/json",
+          "size" : 2440
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "api"
+  }, {
+    "name" : "parentSuite",
+    "value" : "api"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "api"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az135-171"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 7,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "b4f0a6c8350ca3a5",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/b4f0a6c8350ca3a5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652357555848,
+          "stop" : 1652357557828,
+          "duration" : 1980
+        }
+      }, {
+        "uid" : "72815d994db7aee2",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/72815d994db7aee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652357555848,
+          "stop" : 1652357557828,
+          "duration" : 1980
+        }
+      }, {
+        "uid" : "1501ed7ec6f08894",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/1501ed7ec6f08894",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652356564973,
+          "stop" : 1652356567047,
+          "duration" : 2074
+        }
+      }, {
+        "uid" : "3c663b85d10d7c91",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/3c663b85d10d7c91",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652355828057,
+          "stop" : 1652355830166,
+          "duration" : 2109
+        }
+      }, {
+        "uid" : "ab7915ddf4a68206",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/ab7915ddf4a68206",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652354771557,
+          "stop" : 1652354773627,
+          "duration" : 2070
+        }
+      }, {
+        "uid" : "810d45573b0f0544",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/810d45573b0f0544",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652305268727,
+          "stop" : 1652305270990,
+          "duration" : 2263
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ec234a79e2699a76.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,274 @@
+{
+  "uid" : "dbc0de614dcf474e",
+  "name" : "existing users",
+  "fullName" : "authentication existing users",
+  "historyId" : "2e7c1d7d-f0b1-505b-ace8-9918dedf46b0",
+  "time" : {
+    "start" : 1652358493283,
+    "stop" : 1652358495779,
+    "duration" : 2496
+  },
+  "description" : "When user is already signed up then he should be able to log in",
+  "descriptionHtml" : "<p>When user is already signed up then he should be able to log in</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "When user is already signed up then he should be able to log in",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a valid user",
+      "time" : {
+        "start" : 1652358493284,
+        "stop" : 1652358495135,
+        "duration" : 1851
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Create Supabase client",
+        "time" : {
+          "start" : 1652358493285,
+          "stop" : 1652358493286,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "I sign up with a valid email and password",
+        "time" : {
+          "start" : 1652358493286,
+          "stop" : 1652358494905,
+          "duration" : 1619
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get confirmation token for user 7009ca8c-6027-4d79-9f5f-561f3baffb23",
+        "time" : {
+          "start" : 1652358494906,
+          "stop" : 1652358494961,
+          "duration" : 55
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "verify with token avwginhfgzyzubxhxbbr",
+        "time" : {
+          "start" : 1652358494961,
+          "stop" : 1652358495135,
+          "duration" : 174
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create Supabase client",
+      "time" : {
+        "start" : 1652358495135,
+        "stop" : 1652358495136,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am logged in by checking if I can insert my profile",
+      "time" : {
+        "start" : 1652358495347,
+        "stop" : 1652358495465,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am logged in by checking if I can get my profile",
+      "time" : {
+        "start" : 1652358495465,
+        "stop" : 1652358495646,
+        "duration" : 181
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am being able to log out",
+      "time" : {
+        "start" : 1652358495647,
+        "stop" : 1652358495778,
+        "duration" : 131
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "authentication"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az173-358"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 5,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "c95535f1ec439f3c",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/c95535f1ec439f3c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652358169402,
+          "stop" : 1652358171326,
+          "duration" : 1924
+        }
+      }, {
+        "uid" : "5c2ae513dedd258e",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/5c2ae513dedd258e",
+        "status" : "failed",
+        "statusDetails" : "PostgresError: password authentication failed for user \"postgres\"",
+        "time" : {
+          "start" : 1652357375106,
+          "stop" : 1652357376595,
+          "duration" : 1489
+        }
+      }, {
+        "uid" : "fa57bd5a493d8289",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/fa57bd5a493d8289",
+        "status" : "failed",
+        "statusDetails" : "PostgresError: password authentication failed for user \"postgres\"",
+        "time" : {
+          "start" : 1652356427763,
+          "stop" : 1652356429563,
+          "duration" : 1800
+        }
+      }, {
+        "uid" : "835a190d2ef2e2e6",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/835a190d2ef2e2e6",
+        "status" : "failed",
+        "statusDetails" : "PostgresError: password authentication failed for user \"postgres\"",
+        "time" : {
+          "start" : 1652355688009,
+          "stop" : 1652355689350,
+          "duration" : 1341
+        }
+      }, {
+        "uid" : "23cdb5de8aeca9bc",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/23cdb5de8aeca9bc",
+        "status" : "failed",
+        "statusDetails" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+        "time" : {
+          "start" : 1652354650004,
+          "stop" : 1652354650043,
+          "duration" : 39
+        }
+      }, {
+        "uid" : "1082c5584147088a",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/1082c5584147088a",
+        "status" : "failed",
+        "statusDetails" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+        "time" : {
+          "start" : 1652304992232,
+          "stop" : 1652304992254,
+          "duration" : 22
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "dbc0de614dcf474e.json",
+  "parameterValues" : [ ]
+}
