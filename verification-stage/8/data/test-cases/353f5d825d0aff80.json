@@ -1,0 +1,160 @@
+{
+  "uid" : "353f5d825d0aff80",
+  "name" : "create project",
+  "fullName" : "[gui] project create project",
+  "historyId" : "0ddae788-915a-5f06-a71c-d2e46266719b",
+  "time" : {
+    "start" : 1652356526556,
+    "stop" : 1652356560434,
+    "duration" : 33878
+  },
+  "description" : "create new project using gui dashboard",
+  "descriptionHtml" : "<p>create new project using gui dashboard</p>\n",
+  "status" : "failed",
+  "statusMessage" : "TimeoutError: page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================",
+  "statusTrace" : "page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================\n    at Project.create project (/home/runner/work/infrastructure/infrastructure/tests/spec/dashboard-gui/project.spec.ts:28:16)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "create new project using gui dashboard",
+    "status" : "failed",
+    "statusMessage" : "TimeoutError: page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================",
+    "statusTrace" : "page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================\n    at Project.create project (/home/runner/work/infrastructure/infrastructure/tests/spec/dashboard-gui/project.spec.ts:28:16)",
+    "steps" : [ {
+      "name" : "home page",
+      "time" : {
+        "start" : 1652356527937,
+        "stop" : 1652356527939,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7bcef832a1768ff6",
+        "name" : "image/jpeg",
+        "source" : "7bcef832a1768ff6.jpg",
+        "type" : "image/jpeg",
+        "size" : 6209
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "create project",
+      "time" : {
+        "start" : 1652356530159,
+        "stop" : 1652356530160,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1888e598a8e54b28",
+        "name" : "image/jpeg",
+        "source" : "1888e598a8e54b28.jpg",
+        "type" : "image/jpeg",
+        "size" : 37696
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "[gui] project"
+  }, {
+    "name" : "parentSuite",
+    "value" : "[gui] project"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "settings"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az163-222"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 4,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "2f961fbb7e36b6f8",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/2f961fbb7e36b6f8",
+        "status" : "failed",
+        "statusDetails" : "TimeoutError: page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================",
+        "time" : {
+          "start" : 1652355790096,
+          "stop" : 1652355824164,
+          "duration" : 34068
+        }
+      }, {
+        "uid" : "a1aec3e4c76e746",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/a1aec3e4c76e746",
+        "status" : "failed",
+        "statusDetails" : "TimeoutError: page.fill: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for selector \"input[id=\"project-name\"]\"\n============================================================",
+        "time" : {
+          "start" : 1652354733728,
+          "stop" : 1652354767883,
+          "duration" : 34155
+        }
+      }, {
+        "uid" : "4cfddcaa9f75b67b",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/4cfddcaa9f75b67b",
+        "status" : "failed",
+        "statusDetails" : ": Timeout - Async callback was not invoked within the 200000 ms timeout specified by jest.setTimeout.",
+        "time" : {
+          "start" : 1652305064419,
+          "stop" : 1652305264805,
+          "duration" : 200386
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "353f5d825d0aff80.json",
+  "parameterValues" : [ ]
+}
