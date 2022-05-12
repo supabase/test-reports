@@ -1,0 +1,128 @@
+{
+  "uid" : "d26fe581110be7b2",
+  "name" : "signup should create user",
+  "fullName" : "authentication signup should create user",
+  "historyId" : "6b2117db-8151-5a46-8d6b-f7624d07b77b",
+  "time" : {
+    "start" : 1652354649917,
+    "stop" : 1652354649973,
+    "duration" : 56
+  },
+  "description" : "When user sign up then corresponding user in auth schema should be created",
+  "descriptionHtml" : "<p>When user sign up then corresponding user in auth schema should be created</p>\n",
+  "status" : "failed",
+  "statusMessage" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+  "statusTrace" : "\n    at Authentication.<anonymous> (/home/runner/work/infrastructure/infrastructure/supabase/tests/features/javascript/authentication.spec.ts:27:25)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/runner/work/infrastructure/infrastructure/supabase/tests/features/javascript/authentication.spec.ts:14:58)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "When user sign up then corresponding user in auth schema should be created",
+    "status" : "failed",
+    "statusMessage" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+    "statusTrace" : "\n    at Authentication.<anonymous> (/home/runner/work/infrastructure/infrastructure/supabase/tests/features/javascript/authentication.spec.ts:27:25)\n    at Generator.next (<anonymous>)\n    at fulfilled (/home/runner/work/infrastructure/infrastructure/supabase/tests/features/javascript/authentication.spec.ts:14:58)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)",
+    "steps" : [ {
+      "name" : "Create Supabase client",
+      "time" : {
+        "start" : 1652354649923,
+        "stop" : 1652354649926,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "I sign up with a valid email and password",
+      "time" : {
+        "start" : 1652354649927,
+        "stop" : 1652354649945,
+        "duration" : 18
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "authentication"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az204-46"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 2,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "d828b29ab802deee",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/d828b29ab802deee",
+        "status" : "failed",
+        "statusDetails" : "Error: expect(received).toBeNull()\n\nReceived: [FetchError: request to http://localhost:8000/auth/v1/signup failed, reason: connect ECONNREFUSED 127.0.0.1:8000]",
+        "time" : {
+          "start" : 1652304992148,
+          "stop" : 1652304992203,
+          "duration" : 55
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "d26fe581110be7b2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "f2a6588e503e0781",
+  "name" : "get projects",
+  "fullName" : "home get projects",
+  "historyId" : "fc9d334f-d3cf-59f8-bad5-f11ddf79de70",
+  "time" : {
+    "start" : 1652354700473,
+    "stop" : 1652354701784,
+    "duration" : 1311
+  },
+  "description" : "get projects list",
+  "descriptionHtml" : "<p>get projects list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "home"
+  }, {
+    "name" : "parentSuite",
+    "value" : "home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "home"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-984"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "92d54eba2fa55079",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/92d54eba2fa55079",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652305031258,
+          "stop" : 1652305032804,
+          "duration" : 1546
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "f2a6588e503e0781.json",
+  "parameterValues" : [ ]
+}

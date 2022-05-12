@@ -1,0 +1,78 @@
+{
+  "uid" : "6cd7a4227b3ce5d7",
+  "name" : "get schemas",
+  "fullName" : "tables get schemas",
+  "historyId" : "67e39687-6b8c-5525-9d03-dc7e2f32512a",
+  "time" : {
+    "start" : 1652354668318,
+    "stop" : 1652354669882,
+    "duration" : 1564
+  },
+  "description" : "get schemas list",
+  "descriptionHtml" : "<p>get schemas list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "tables"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tables"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "tables"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-984"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "6f871cf544c47519",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/6f871cf544c47519",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652304996341,
+          "stop" : 1652304998445,
+          "duration" : 2104
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "6cd7a4227b3ce5d7.json",
+  "parameterValues" : [ ]
+}

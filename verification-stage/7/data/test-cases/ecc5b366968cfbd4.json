@@ -1,0 +1,75 @@
+{
+  "uid" : "ecc5b366968cfbd4",
+  "name" : "multiple subscriptions 0",
+  "fullName" : "realtime multiple subscriptions multiple subscriptions 0",
+  "historyId" : "e4dc91f1-5157-5eaf-a524-5aee05b67e16",
+  "time" : {
+    "start" : 1652354652603,
+    "stop" : 1652354652603,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "realtime.multiple subscriptions"
+  }, {
+    "name" : "parentSuite",
+    "value" : "realtime"
+  }, {
+    "name" : "suite",
+    "value" : "multiple subscriptions"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az204-46"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 2,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "508196791b8af550",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/508196791b8af550",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1652304994486,
+          "stop" : 1652304994486,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "ecc5b366968cfbd4.json",
+  "parameterValues" : [ ]
+}

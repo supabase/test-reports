@@ -1,0 +1,119 @@
+{
+  "uid" : "11a2ead19e00f01d",
+  "name" : "supabase auth is working in project",
+  "fullName" : "home supabase auth is working in project",
+  "historyId" : "b050fd06-47c6-50b1-bd77-c39661986d6d",
+  "time" : {
+    "start" : 1652354708332,
+    "stop" : 1652354713566,
+    "duration" : 5234
+  },
+  "description" : "check supabase clients works correctly",
+  "descriptionHtml" : "<p>check supabase clients works correctly</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "check supabase clients works correctly",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Get api key",
+      "time" : {
+        "start" : 1652354710914,
+        "stop" : 1652354710914,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Get api key",
+      "time" : {
+        "start" : 1652354712656,
+        "stop" : 1652354712656,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2,
+    "attachmentsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "home"
+  }, {
+    "name" : "parentSuite",
+    "value" : "home"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "home"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-984"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "15492d60eaaa4b55",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/15492d60eaaa4b55",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652305038808,
+          "stop" : 1652305043546,
+          "duration" : 4738
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "11a2ead19e00f01d.json",
+  "parameterValues" : [ ]
+}
