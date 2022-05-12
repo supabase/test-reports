@@ -1,0 +1,105 @@
+{
+  "uid" : "1f0db0f38e6d33fb",
+  "name" : "get postgrest settings",
+  "fullName" : "settings get postgrest settings",
+  "historyId" : "9fbc0c44-ab73-56bb-b43e-9cef0fc35624",
+  "time" : {
+    "start" : 1652361363224,
+    "stop" : 1652361363452,
+    "duration" : 228
+  },
+  "description" : "get api service (postgrest) settings list",
+  "descriptionHtml" : "<p>get api service (postgrest) settings list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "get api service (postgrest) settings list",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "expect project is correctly returned",
+      "time" : {
+        "start" : 1652361363444,
+        "stop" : 1652361363446,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "settings",
+        "time" : {
+          "start" : 1652361363444,
+          "stop" : 1652361363445,
+          "duration" : 1
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "7b4f29757e7a7091",
+          "name" : "application/json",
+          "source" : "7b4f29757e7a7091.json",
+          "type" : "application/json",
+          "size" : 206
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "settings"
+  }, {
+    "name" : "parentSuite",
+    "value" : "settings"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "settings"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az377-855"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f0db0f38e6d33fb.json",
+  "parameterValues" : [ ]
+}

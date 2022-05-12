@@ -1,0 +1,189 @@
+{
+  "uid" : "1fd532fe3210318f",
+  "name" : "get user",
+  "fullName" : "authentication get user",
+  "historyId" : "44b46eed-6e3e-5271-b67c-74cbec1a29fa",
+  "time" : {
+    "start" : 1652361198855,
+    "stop" : 1652361199594,
+    "duration" : 739
+  },
+  "description" : "When user is signed in then he should be able to get his info and metadata",
+  "descriptionHtml" : "<p>When user is signed in then he should be able to get his info and metadata</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "When user is signed in then he should be able to get his info and metadata",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create a valid user",
+      "time" : {
+        "start" : 1652361198856,
+        "stop" : 1652361199426,
+        "duration" : 570
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Create Supabase client",
+        "time" : {
+          "start" : 1652361198856,
+          "stop" : 1652361198856,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "I sign up with a valid email and password",
+        "time" : {
+          "start" : 1652361198857,
+          "stop" : 1652361199343,
+          "duration" : 486
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "get confirmation token for user 778e5f25-66bd-4c86-88dd-1c997c77b1fb",
+        "time" : {
+          "start" : 1652361199344,
+          "stop" : 1652361199351,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      }, {
+        "name" : "verify with token dyfrrnflfezcmagzuuip",
+        "time" : {
+          "start" : 1652361199352,
+          "stop" : 1652361199426,
+          "duration" : 74
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Create Supabase client",
+      "time" : {
+        "start" : 1652361199427,
+        "stop" : 1652361199427,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Get user data, if there is a logged in user",
+      "time" : {
+        "start" : 1652361199593,
+        "stop" : 1652361199593,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if user is signed in correctly and can get his data",
+      "time" : {
+        "start" : 1652361199593,
+        "stop" : 1652361199593,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "authentication"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az266-175"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1fd532fe3210318f.json",
+  "parameterValues" : [ ]
+}

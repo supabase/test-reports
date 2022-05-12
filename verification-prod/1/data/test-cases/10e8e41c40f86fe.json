@@ -1,0 +1,153 @@
+{
+  "uid" : "10e8e41c40f86fe",
+  "name" : "create project",
+  "fullName" : "[gui] project create project",
+  "historyId" : "0ddae788-915a-5f06-a71c-d2e46266719b",
+  "time" : {
+    "start" : 1652361272474,
+    "stop" : 1652361350217,
+    "duration" : 77743
+  },
+  "description" : "create new project using gui dashboard",
+  "descriptionHtml" : "<p>create new project using gui dashboard</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "create new project using gui dashboard",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "home page",
+      "time" : {
+        "start" : 1652361274180,
+        "stop" : 1652361274182,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b0642313591ccb7f",
+        "name" : "image/jpeg",
+        "source" : "b0642313591ccb7f.jpg",
+        "type" : "image/jpeg",
+        "size" : 52351
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "create project",
+      "time" : {
+        "start" : 1652361274478,
+        "stop" : 1652361274478,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24f0eae2dce6ce59",
+        "name" : "image/jpeg",
+        "source" : "24f0eae2dce6ce59.jpg",
+        "type" : "image/jpeg",
+        "size" : 57685
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "form filled",
+      "time" : {
+        "start" : 1652361275492,
+        "stop" : 1652361275492,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8effe429884de4af",
+        "name" : "image/jpeg",
+        "source" : "8effe429884de4af.jpg",
+        "type" : "image/jpeg",
+        "size" : 56781
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "project setting up",
+      "time" : {
+        "start" : 1652361281465,
+        "stop" : 1652361281466,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bea4363610d351d8",
+        "name" : "image/jpeg",
+        "source" : "bea4363610d351d8.jpg",
+        "type" : "image/jpeg",
+        "size" : 56075
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "[gui] project"
+  }, {
+    "name" : "parentSuite",
+    "value" : "[gui] project"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "settings"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az377-855"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "10e8e41c40f86fe.json",
+  "parameterValues" : [ ]
+}
