@@ -1,0 +1,85 @@
+{
+  "uid" : "800c86dfc6a929d3",
+  "name" : "subscribe on table with RLS policies 2",
+  "fullName" : "realtime subscribe on table with RLS policies subscribe on table with RLS policies 2",
+  "historyId" : "8b995d7e-0cf2-5921-8cfb-60d532700f58",
+  "time" : {
+    "start" : 1652355692500,
+    "stop" : 1652355692500,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "realtime.subscribe on table with RLS policies"
+  }, {
+    "name" : "parentSuite",
+    "value" : "realtime"
+  }, {
+    "name" : "suite",
+    "value" : "subscribe on table with RLS policies"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az426-589"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "9a809d48e7359b62",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/9a809d48e7359b62",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1652354652616,
+          "stop" : 1652354652617,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "cdc3cee3e8cceabe",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/cdc3cee3e8cceabe",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1652304994490,
+          "stop" : 1652304994490,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "800c86dfc6a929d3.json",
+  "parameterValues" : [ ]
+}

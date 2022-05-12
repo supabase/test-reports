@@ -1,0 +1,82 @@
+{
+  "uid" : "c88cc419073131e3",
+  "name" : "get subscriptions",
+  "fullName" : "realtime get subscriptions",
+  "historyId" : "1177ca07-4120-5025-bada-1927b3f60450",
+  "time" : {
+    "start" : 1652355692495,
+    "stop" : 1652355692495,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "statusMessage" : "Temporarily disabled with xit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "realtime"
+  }, {
+    "name" : "parentSuite",
+    "value" : "realtime"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az426-589"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 3,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "b49980a9034fc1b9",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/b49980a9034fc1b9",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1652354652601,
+          "stop" : 1652354652601,
+          "duration" : 0
+        }
+      }, {
+        "uid" : "29d599d8841423fb",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/29d599d8841423fb",
+        "status" : "skipped",
+        "statusDetails" : "Temporarily disabled with xit",
+        "time" : {
+          "start" : 1652304994484,
+          "stop" : 1652304994484,
+          "duration" : 0
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "c88cc419073131e3.json",
+  "parameterValues" : [ ]
+}
