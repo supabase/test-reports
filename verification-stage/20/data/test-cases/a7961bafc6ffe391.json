@@ -1,0 +1,215 @@
+{
+  "uid" : "a7961bafc6ffe391",
+  "name" : "get postgrest settings",
+  "fullName" : "settings get postgrest settings",
+  "historyId" : "9fbc0c44-ab73-56bb-b43e-9cef0fc35624",
+  "time" : {
+    "start" : 1652442722860,
+    "stop" : 1652442724970,
+    "duration" : 2110
+  },
+  "description" : "get api service (postgrest) settings list",
+  "descriptionHtml" : "<p>get api service (postgrest) settings list</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "get api service (postgrest) settings list",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "expect project is correctly returned",
+      "time" : {
+        "start" : 1652442724963,
+        "stop" : 1652442724965,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "settings",
+        "time" : {
+          "start" : 1652442724964,
+          "stop" : 1652442724964,
+          "duration" : 0
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "1cdaaa91f8597cd5",
+          "name" : "application/json",
+          "source" : "1cdaaa91f8597cd5.json",
+          "type" : "application/json",
+          "size" : 206
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "settings"
+  }, {
+    "name" : "parentSuite",
+    "value" : "settings"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "settings"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az241-38"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 12,
+        "unknown" : 0,
+        "total" : 12
+      },
+      "items" : [ {
+        "uid" : "66b95dafc2f528ac",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/19//#testresult/66b95dafc2f528ac",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652365896344,
+          "stop" : 1652365898314,
+          "duration" : 1970
+        }
+      }, {
+        "uid" : "fe77ba22dfd71f18",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/13//#testresult/fe77ba22dfd71f18",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652362561539,
+          "stop" : 1652362563789,
+          "duration" : 2250
+        }
+      }, {
+        "uid" : "2e0af6be68b64f38",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/12//#testresult/2e0af6be68b64f38",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652361462969,
+          "stop" : 1652361464849,
+          "duration" : 1880
+        }
+      }, {
+        "uid" : "606cd9325f8d034c",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/11//#testresult/606cd9325f8d034c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652359941175,
+          "stop" : 1652359943405,
+          "duration" : 2230
+        }
+      }, {
+        "uid" : "c72976e8fe4a6572",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/c72976e8fe4a6572",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652358703216,
+          "stop" : 1652358705261,
+          "duration" : 2045
+        }
+      }, {
+        "uid" : "3a33c3b946c4ea6b",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/3a33c3b946c4ea6b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652357579535,
+          "stop" : 1652357581569,
+          "duration" : 2034
+        }
+      }, {
+        "uid" : "6dbaccd3332462f2",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/10//#testresult/6dbaccd3332462f2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652357579535,
+          "stop" : 1652357581569,
+          "duration" : 2034
+        }
+      }, {
+        "uid" : "bac7c2b88091563f",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/bac7c2b88091563f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652356590064,
+          "stop" : 1652356592039,
+          "duration" : 1975
+        }
+      }, {
+        "uid" : "a45b35f9ddbf633e",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/8//#testresult/a45b35f9ddbf633e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652355851488,
+          "stop" : 1652355853520,
+          "duration" : 2032
+        }
+      }, {
+        "uid" : "2d1d7d2d1433566c",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/7//#testresult/2d1d7d2d1433566c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652354794625,
+          "stop" : 1652354796702,
+          "duration" : 2077
+        }
+      }, {
+        "uid" : "d65dbd51ce4f217b",
+        "reportUrl" : "https://supabase.github.io/test-reports/verification-stage/6//#testresult/d65dbd51ce4f217b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652305292373,
+          "stop" : 1652305294403,
+          "duration" : 2030
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "a7961bafc6ffe391.json",
+  "parameterValues" : [ ]
+}
