@@ -1,0 +1,871 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az208-243",
+    "children" : [ {
+      "name" : "01",
+      "children" : [ {
+        "name" : "subscribe on table with RLS 0",
+        "uid" : "487a2e102bb6a1d4",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209577,
+          "stop" : 1652928209577,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "generate link 1",
+        "uid" : "bae9dc812f3a1d95",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208896,
+          "stop" : 1652928208896,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "create private bucket",
+        "uid" : "6ad5748e1f142001",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928210350,
+          "stop" : 1652928210351,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "call rpc",
+        "uid" : "6a31e7987b163644",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928211452,
+          "stop" : 1652928211453,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "sign up with email",
+        "uid" : "ce854d0defa4956c",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208891,
+          "stop" : 1652928208891,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "sign in with phone",
+        "uid" : "f34ba1db8bf94d9d",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208892,
+          "stop" : 1652928208892,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "delete user",
+        "uid" : "37b7cfbcfe59f79f",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208895,
+          "stop" : 1652928208895,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "remove all subscriptions",
+        "uid" : "6bb524c19e195bf1",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209582,
+          "stop" : 1652928209582,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "existing users",
+        "uid" : "bb4cad271521c744",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652928207176,
+          "stop" : 1652928207384,
+          "duration" : 208
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "generate link 2",
+        "uid" : "a0616cc9cbf1f4ce",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208897,
+          "stop" : 1652928208897,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS 2",
+        "uid" : "92a950806b4d78e8",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209577,
+          "stop" : 1652928209578,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on RLS table with service key 1",
+        "uid" : "52fd296360e78adf",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209580,
+          "stop" : 1652928209580,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table 0",
+        "uid" : "55096f0516414930",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209574,
+          "stop" : 1652928209574,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "set auth cookie",
+        "uid" : "ab3100033309bff4",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208895,
+          "stop" : 1652928208895,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "update user",
+        "uid" : "c7df5332b684c051",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208895,
+          "stop" : 1652928208895,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "multiple subscriptions 2",
+        "uid" : "14aa219daaeae5b8",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209576,
+          "stop" : 1652928209577,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "refresh session",
+        "uid" : "c37ae99c5fc08c20",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928207563,
+          "stop" : 1652928207563,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get user",
+        "uid" : "e9a3a017c7d9f416",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652928207384,
+          "stop" : 1652928207561,
+          "duration" : 177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "remove one subscription",
+        "uid" : "b1aeaf6603990619",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209581,
+          "stop" : 1652928209582,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "set session",
+        "uid" : "b9c07172462be991",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928207562,
+          "stop" : 1652928207562,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get user",
+        "uid" : "4b670d2bc990accf",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208894,
+          "stop" : 1652928208894,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "set auth",
+        "uid" : "7bb30d39efe8b45f",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928210895,
+          "stop" : 1652928210896,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "delete user with anon key",
+        "uid" : "f1d58a6abcd033db",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208895,
+          "stop" : 1652928208895,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS policies 3",
+        "uid" : "aab6081ff1d23203",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209579,
+          "stop" : 1652928209579,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get url for provider 0",
+        "uid" : "1e973e261f909668",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208893,
+          "stop" : 1652928208893,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table 1",
+        "uid" : "f256d9e468c25152",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209575,
+          "stop" : 1652928209575,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "new users by phone",
+        "uid" : "10ab0b457c2a6f12",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652928207049,
+          "stop" : 1652928207175,
+          "duration" : 126
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS policies 1",
+        "uid" : "64061377c516a032",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209579,
+          "stop" : 1652928209579,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe from 2 clients",
+        "uid" : "56eaf6ad4871f2bb",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209580,
+          "stop" : 1652928209580,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "realtime connect",
+        "uid" : "84e0df9c9f596c35",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209572,
+          "stop" : 1652928209573,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "list users",
+        "uid" : "c23804365f6b3950",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208890,
+          "stop" : 1652928208890,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS 3",
+        "uid" : "7335f0349a03867e",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209578,
+          "stop" : 1652928209578,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS policies 2",
+        "uid" : "e04c187b94d4561",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209579,
+          "stop" : 1652928209579,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get subscriptions",
+        "uid" : "8ef2778034b0b47c",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209574,
+          "stop" : 1652928209574,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on RLS table with service key 0",
+        "uid" : "561b5b731797c8f4",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209580,
+          "stop" : 1652928209580,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "send reset password",
+        "uid" : "52bc2c2342a0f677",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208892,
+          "stop" : 1652928208893,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "send magic link",
+        "uid" : "28ac1fe961bed3c7",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208892,
+          "stop" : 1652928208892,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "multiple subscriptions 1",
+        "uid" : "53e188fe14574fb3",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209576,
+          "stop" : 1652928209576,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "no event updates until subscribe",
+        "uid" : "abb43661a2dcd056",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209573,
+          "stop" : 1652928209574,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table 2",
+        "uid" : "35d2ef82d2d98fa3",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209575,
+          "stop" : 1652928209575,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table 3",
+        "uid" : "cd0dbe92df8a9143",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209575,
+          "stop" : 1652928209575,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "generate link 0",
+        "uid" : "dd64eb4fafb1cef4",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208896,
+          "stop" : 1652928208896,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on RLS table with service key 2",
+        "uid" : "e6ff932eed5390be",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209581,
+          "stop" : 1652928209581,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "send invite link",
+        "uid" : "36655a17d95bb5cc",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208892,
+          "stop" : 1652928208892,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on RLS table with service key 3",
+        "uid" : "9807ddd4f10197af",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209581,
+          "stop" : 1652928209581,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "sign up with phone",
+        "uid" : "6067ff8253efb0b2",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208891,
+          "stop" : 1652928208891,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "multiple subscriptions 0",
+        "uid" : "b44dcdaeb0671de1",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209576,
+          "stop" : 1652928209576,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "sign in with email",
+        "uid" : "30446f8ac9d5117",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208891,
+          "stop" : 1652928208891,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "set auth",
+        "uid" : "47c84e93861fd54b",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928207562,
+          "stop" : 1652928207563,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS 1",
+        "uid" : "c8ad617542a7e670",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209577,
+          "stop" : 1652928209577,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "unsubscribe from table",
+        "uid" : "3fd3ebea49140c95",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209581,
+          "stop" : 1652928209581,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "create user",
+        "uid" : "d9f5ca01bf192473",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208888,
+          "stop" : 1652928208889,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get url for provider 2",
+        "uid" : "ffbdc23902871178",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208894,
+          "stop" : 1652928208894,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "create user can login",
+        "uid" : "24c5880f516f2bea",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208889,
+          "stop" : 1652928208890,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "new users",
+        "uid" : "3e9d09f306f8c5e",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652928206778,
+          "stop" : 1652928207048,
+          "duration" : 270
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get user by cookie",
+        "uid" : "5fb735f88baa3d44",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208896,
+          "stop" : 1652928208896,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "on auth state changed",
+        "uid" : "b5819ffcb5b416b7",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928207563,
+          "stop" : 1652928207563,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "refresh session",
+        "uid" : "143a90acc6d76c1e",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208896,
+          "stop" : 1652928208896,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "list users with anon key",
+        "uid" : "57321c851e283241",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208890,
+          "stop" : 1652928208891,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "get url for provider 1",
+        "uid" : "3f748fad6bc59ea0",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208893,
+          "stop" : 1652928208894,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "signup should create user",
+        "uid" : "28fb5a9178d34b0a",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "passed",
+        "time" : {
+          "start" : 1652928206614,
+          "stop" : 1652928206778,
+          "duration" : 164
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "create user with anon key",
+        "uid" : "7ace2f52fa9d7800",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208890,
+          "stop" : 1652928208890,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "subscribe on table with RLS policies 0",
+        "uid" : "e213a1eafcc18e67",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928209578,
+          "stop" : 1652928209578,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "update user",
+        "uid" : "4b6169ba836ba9aa",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928207561,
+          "stop" : 1652928207562,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "sign out",
+        "uid" : "363e4051886a0455",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928208893,
+          "stop" : 1652928208893,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "create public bucket",
+        "uid" : "790dfc1728c0b765",
+        "parentUid" : "7a60fe0241b3b76da2b3fbe612a071f7",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1652928210349,
+          "stop" : 1652928210350,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7a60fe0241b3b76da2b3fbe612a071f7"
+    } ],
+    "uid" : "9f268c19a5e3094c82b1b98407cba759"
+  } ],
+  "name" : "timeline"
+}
