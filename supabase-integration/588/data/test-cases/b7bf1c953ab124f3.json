@@ -1,0 +1,335 @@
+{
+  "uid" : "b7bf1c953ab124f3",
+  "name" : "new users by phone",
+  "fullName" : "authentication new users by phone",
+  "historyId" : "098a07b1-765c-5712-a7bf-07e499eb8549",
+  "time" : {
+    "start" : 1653388782956,
+    "stop" : 1653388783112,
+    "duration" : 156
+  },
+  "description" : "When user sign up with phone then he should be logged in",
+  "descriptionHtml" : "<p>When user sign up with phone then he should be logged in</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "When user sign up with phone then he should be logged in",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Create Supabase client",
+      "time" : {
+        "start" : 1653388782957,
+        "stop" : 1653388782957,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "I sign up with a valid email and password",
+      "time" : {
+        "start" : 1653388782958,
+        "stop" : 1653388783078,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am logged in by checking if I can insert my profile",
+      "time" : {
+        "start" : 1653388783079,
+        "stop" : 1653388783099,
+        "duration" : 20
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am logged in by checking if I can get my profile",
+      "time" : {
+        "start" : 1653388783100,
+        "stop" : 1653388783105,
+        "duration" : 5
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Check if I am being able to log out",
+      "time" : {
+        "start" : 1653388783105,
+        "stop" : 1653388783112,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "01"
+  }, {
+    "name" : "package",
+    "value" : "authentication"
+  }, {
+    "name" : "parentSuite",
+    "value" : "authentication"
+  }, {
+    "name" : "severity",
+    "value" : "blocker"
+  }, {
+    "name" : "feature",
+    "value" : "authentication"
+  }, {
+    "name" : "framework",
+    "value" : "jest"
+  }, {
+    "name" : "language",
+    "value" : "typescript/javascript"
+  }, {
+    "name" : "host",
+    "value" : "fv-az39-909"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "blocker",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 454,
+        "unknown" : 0,
+        "total" : 454
+      },
+      "items" : [ {
+        "uid" : "2583f2f684f47dc4",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/587//#testresult/2583f2f684f47dc4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653387263848,
+          "stop" : 1653387264000,
+          "duration" : 152
+        }
+      }, {
+        "uid" : "44dbad26466811b6",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/586//#testresult/44dbad26466811b6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653386642436,
+          "stop" : 1653386642576,
+          "duration" : 140
+        }
+      }, {
+        "uid" : "ecacefffcd524b80",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/585//#testresult/ecacefffcd524b80",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653386033065,
+          "stop" : 1653386033183,
+          "duration" : 118
+        }
+      }, {
+        "uid" : "cf005bbd3270e627",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/584//#testresult/cf005bbd3270e627",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653385925650,
+          "stop" : 1653385925767,
+          "duration" : 117
+        }
+      }, {
+        "uid" : "132f429d1fc5891b",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/583//#testresult/132f429d1fc5891b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653385545167,
+          "stop" : 1653385545287,
+          "duration" : 120
+        }
+      }, {
+        "uid" : "e3382ac438fb8d2d",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/582//#testresult/e3382ac438fb8d2d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653384235851,
+          "stop" : 1653384235987,
+          "duration" : 136
+        }
+      }, {
+        "uid" : "3dffb6e36a480e88",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/581//#testresult/3dffb6e36a480e88",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653384045871,
+          "stop" : 1653384046003,
+          "duration" : 132
+        }
+      }, {
+        "uid" : "ce5383aec81066ec",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/580//#testresult/ce5383aec81066ec",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653381227005,
+          "stop" : 1653381227117,
+          "duration" : 112
+        }
+      }, {
+        "uid" : "cb12e3a9d0fb63e8",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/579//#testresult/cb12e3a9d0fb63e8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653380285084,
+          "stop" : 1653380285220,
+          "duration" : 136
+        }
+      }, {
+        "uid" : "447e54043913a6e4",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/578//#testresult/447e54043913a6e4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653377295709,
+          "stop" : 1653377295851,
+          "duration" : 142
+        }
+      }, {
+        "uid" : "8e639e6dc12383bb",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/577//#testresult/8e639e6dc12383bb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653377128353,
+          "stop" : 1653377128504,
+          "duration" : 151
+        }
+      }, {
+        "uid" : "45bcc4efd83c31e",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/576//#testresult/45bcc4efd83c31e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653376694338,
+          "stop" : 1653376694484,
+          "duration" : 146
+        }
+      }, {
+        "uid" : "5827fe8df4c1cf57",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/575//#testresult/5827fe8df4c1cf57",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653376043325,
+          "stop" : 1653376043458,
+          "duration" : 133
+        }
+      }, {
+        "uid" : "b24e9cdce37e2faa",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/573//#testresult/b24e9cdce37e2faa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653369136241,
+          "stop" : 1653369136392,
+          "duration" : 151
+        }
+      }, {
+        "uid" : "9983b6320483991",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/572//#testresult/9983b6320483991",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653369083465,
+          "stop" : 1653369083621,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "cef62345a6407921",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/571//#testresult/cef62345a6407921",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653368896625,
+          "stop" : 1653368896759,
+          "duration" : 134
+        }
+      }, {
+        "uid" : "f06aba09cbcf44a3",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/570//#testresult/f06aba09cbcf44a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653362171930,
+          "stop" : 1653362172055,
+          "duration" : 125
+        }
+      }, {
+        "uid" : "b876d36642275703",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/569//#testresult/b876d36642275703",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653361736793,
+          "stop" : 1653361736938,
+          "duration" : 145
+        }
+      }, {
+        "uid" : "8433a92029560a0f",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/568//#testresult/8433a92029560a0f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653361165650,
+          "stop" : 1653361165806,
+          "duration" : 156
+        }
+      }, {
+        "uid" : "e11963943cc34fa",
+        "reportUrl" : "https://supabase.github.io/test-reports/supabase-integration/567//#testresult/e11963943cc34fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653360820738,
+          "stop" : 1653360820875,
+          "duration" : 137
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "b7bf1c953ab124f3.json",
+  "parameterValues" : [ ]
+}
