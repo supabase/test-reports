@@ -11,3 +11,7 @@ Repository to store test reports data and host reporting in gh-pages
 - #### supabase-integration
   - repo: https://github.com/supabase/supabase
   - report (js/ts): https://supabase.github.io/test-reports/supabase-integration
+
+- #### platform-verification
+  - stage: https://supabase.github.io/test-reports/verification-stage
+  - prod: https://supabase.github.io/test-reports/verification-prod
